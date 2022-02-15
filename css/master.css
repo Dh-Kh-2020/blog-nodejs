@@ -1,0 +1,329 @@
+/* ====== GLOBAL CSS ====== */
+
+:root{
+    /* --main-hue: 200; */
+    /* --secondary-hue: 0; */
+    --bg-color: hsla(200, 8%, 92%, 1);
+    --yellow-color: hsl(45, 100%, 51%);
+    --blue-color: hsla(200, 100%, 37%, 1);
+    --red-color: hsla(0, 63%, 61%, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    direction: ltr;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-yellow{
+    color: var(--yellow-color)
+}
+.text-red{
+    color: var(--red-color);
+}
+.text-blue{
+    color: var(--blue-color);
+}
+/* ====== END GLOBAL CSS ====== */
+
+/* ====== HEADER ====== */
+
+.hd{
+    backdrop-filter: blur(6px);
+    opacity: 90%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.brand{
+    text-transform: uppercase;
+    max-width: 10vw;
+    margin-left: 10vw;
+    font-weight: 900;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.brand span{
+    color: var(--yellow-color);
+}
+
+.burger-btn{
+    border: none;
+}
+
+.burger-btn:focus{
+    box-shadow: none;
+}
+
+.ul-nav,
+.ul-nav-reg{
+    text-transform: capitalize;
+}
+
+.nav-a1-li,
+.nav-a2-li,
+.nav-a3-li{
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: inline-block;
+    min-width: fit-content;
+    text-align: center;
+    margin-inline-start: 0.5rem;
+}
+
+.nav-a1-li{
+    border-bottom: 2px solid var(--yellow-color);
+}
+
+.nav-a2-li{
+    border-bottom: 2px solid var(--red-color);
+}
+
+.nav-a3-li{
+    border-bottom: 2px solid var(--blue-color);
+}
+
+.nav-a1-li:hover,
+.nav-a2-li:hover,
+.nav-a3-li:hover{
+    opacity: 0.5;
+}
+
+.nav-log-li,
+.nav-sign-li{
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 7px;
+    /* transition: .6s ease-in-out; */
+}
+
+.nav-log-li{
+    border: 2px solid var(--yellow-color);
+}
+
+.nav-sign-li{
+    color: var(--bg-color);
+    background-color: var(--yellow-color);
+    border: 2px solid var(--yellow-color);
+    margin-inline-start: 0.5rem;
+}
+
+/* ====== END HEADER ====== */
+
+/* ====== SLIDER ====== */
+
+.sec-pos{
+    position: relative;
+}
+
+.img-slider{
+    height: 100vh;
+}
+
+/* Search form  */
+
+.serch-frm-cont{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.serch-frm-cont h1,
+.serch-frm-cont p{
+    color: var(--bg-color);
+}
+
+.serch-frm-cont p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.serch-frm-cont input[type=search]{
+    display: inline-block;
+    margin-inline-end: 3vw;
+    width: 31.17692907248636vw; /* 400px */
+    height: 8.333333333333334vh;                   /* 50px */
+}
+
+/* ====== END SLIDER ====== */
+
+/* ====== START JOBS ====== */
+
+.vac-job-h1{
+    text-transform: capitalize;
+}
+
+/* .vac-job-h1::first-letter{
+    color: var(--yellow-color);
+} */
+
+/* .vacancies{
+    color: var(--yellow-color);
+} */
+/* 
+.await-you{
+    color: var(--blue-color);
+} */
+
+/* .co-logo{
+    height: 11.666666666666666vh;
+    width: 5.455962587685113vw;
+} */
+
+.crd-bd{
+    /* height: 100vh; */
+    /* height: 88vh; */
+    /* position: relative; */
+}
+
+.card-bottom{
+    margin-top: 10px;
+    /* position: absolute; */
+}
+
+/* ====== END JOBS ====== */
+
+/* ====== START PARTNERS ====== */
+
+.patners-sec{
+    background-color: #FFF;
+}
+
+.patners-sec h1::first-letter{
+    color: var(--red-color);
+}
+
+.img-div{
+    /* border: 1px solid red;
+    text-align: center; */
+}
+
+.img-div img{
+    /* border: 1px solid blue; */
+    width: 9vw;
+    height: 11vh;
+}
+
+/* ====== END PARTNERS ====== */
+
+/* ====== START ADVERTISMENT ====== */
+
+.adv-img{
+    /* width: 22vw; */
+    height: 38vh;
+}
+
+/* ====== END ADVERTISMENT ====== */
+
+/* ====== START FOOTER ====== */
+
+.footer-border{
+    border-top: 5px solid #e5e7eb;
+}
+/* ====== END FOOTER ====== */
+
+/* ############################# ENDING OF HOME STYLING ############################ */
+
+/* ############################# STARTING OF SIGNUP STYLING ############################ */
+
+.signup-sec{
+    margin-top: 15vh;
+}
+
+.signup-img{
+    z-index: -1000;
+    /* backdrop-filter: blur(6px); */
+    width: 47vw;
+}
+
+.signup-hd::first-letter{
+    color: var(--red-color);
+    font-size: 3rem;
+}
+
+/* ############################# ENDING OF SIGNUP STYLING ############################ */
+
+
+/* ############################# ENDING OF SIGNUP STYLING ############################ */
+
+.personal-photo{
+    width: 2.338269680436477vw;
+    height: 2.338269680436477vw;
+    /* height: 5.607476635514018vh; */
+}
+
+/* ############################# ENDING OF SIGNUP STYLING ############################ */
+
+
+/* ############################# START DASHBOARD ################################### */
+
+/* ############################# END DASHBOARD ########################################### */
+
+/* ############################# START JOBS ################################### */
+
+.in-jobs-banner{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    /* color: var(--bg-color); */
+    text-transform: uppercase;
+}
+
+.filt-frm-cont{
+    position: absolute;
+    top: 37vh;
+    /* left: 31%; */
+    left: 10%;
+    width: 77vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.filt-frm-cont select{
+    width: 50%;
+    opacity: 70%;
+    margin: 0 2vw;
+}
+
+/* ############################# END JOBS ########################################### */
+
+/* ############################# START ABOUT ########################################### */
+.about{
+    background-image: url(../imgs/general/s-l500.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* .about-h1-spn{
+    color: var(--yellow-color);
+} */
+.about-h1-spn::first-letter{
+    color: var(--yellow-color);
+}
+/* ############################# END ABOUT ########################################### */
+
+/* ############################# RESPONSIVE #################################### */
+
